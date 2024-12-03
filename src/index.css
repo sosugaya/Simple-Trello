@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* レスポンシブに対応するようにbox sizeに対応している */
+*{
+  
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size:40px;
+  color:aliceblue;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px black;
+}
+
+header {
+  text-align: center;
+  background-color: rgba(10, 76, 105, 0.6);
+  padding:4px 10%;
+  margin-bottom: 50px;
+
+}
+
+.app{
+  background-image: url(./images/2daocean.jpg); 
+  /* background-image: url(../src/images/indaocean-1920.jpg);  */
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.taskCard {
+  width:250px;
+  padding: 10px 25px;;
+  margin: 10px 1%;
+  background-color: rgb(228,228,228);
+  border-radius: 5px;
+
+} 
+
+.taskCardTitleInputArea {
+  margin-bottom: 10px;
+  width:30%;
+  cursor:pointer;
+
+}
+
+.taskCardTitleInput {
+  width:80px;
+  font-size: 1.1rem;
+  padding: 4px 6px;
+  border-radius: 3px;
+  border: none;
+  outline:none;
+
+}
+
+.taskAddInput {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+
+}
+
+.taskBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgb(75,75,75);
+
+}
+
+.taskText {
+  margin-left: 12px;
+}
+
+.taskTrashButton {
+  /* カーソルをあてた時にポインターを追加 */
+  cursor:pointer;
+  margin-right: 9px;
+  border:none;
 }
